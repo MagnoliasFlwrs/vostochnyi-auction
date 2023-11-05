@@ -49,4 +49,51 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
   });
+const gallery = document.querySelector('.gallery-mini');
+
+if (gallery) {
+    let swiper7 = new Swiper(".gallery-mini", {
+        spaceBetween: 30,
+        slidesPerView: 2,
+        direction: "horizontal",
+        navigation: {
+            nextEl: ".gallery-mini-button-next",
+            prevEl: ".gallery-mini-button-prev",
+        },
+        breakpoints: {
+            500: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 5,
+            },
+        }
+    });
+    let swiper8 = new Swiper(".gallery", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper7,
+        },
+    });
+}
+
+//show-more
+const showMoreBtn = document.querySelector('.show-more-btn');
+const paramsList = document.querySelector('.params-list');
+
+if (showMoreBtn && paramsList) {
+    showMoreBtn.addEventListener('click' , ()=> {
+        showMoreBtn.classList.toggle('active');
+        paramsList.classList.toggle('show');
+    })
+}
+
+
 
