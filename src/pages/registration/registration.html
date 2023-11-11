@@ -8,6 +8,20 @@
     <title>Title</title>
 </head>
 <body>
+    <div class="overlay "></div>
+    <div class="registration-success-modal ">
+        <div class="close-row">
+            <span class="close-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="white"/>
+                </svg>
+            </span>
+        </div>
+        <div class="modal-body">
+            <p>Поздравляем с успешной регистрацией</p>
+            <span>Для окончания рагистрации просим заполнить Ваши <br> личные данные и пройти аккредитацию </span>
+        </div>
+    </div>
     <header class="header">
     <div class="content">
         <a href="/" class="logo">
@@ -291,11 +305,107 @@
 
                         </div>
                     </div>
+                    <p class="form-attention">Все поля помеченные <span>*</span> обязательны для заполнения</p>
+                    <div class="separator"></div>
+                    <div class="row agree-block">
+                        <div class="check-inner">
+                            <label class="custom-checkbox">
+                                <input class="hidden-checkbox" type="checkbox">
+                                <span class="checkbox">
+                                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                                                </span>
+                                <span>Согласен с обработкой личных данных</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input class="hidden-checkbox" type="checkbox">
+                                <span class="checkbox">
+                                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                                                </span>
+                                <span>Согласен с политикой конфиденциальности</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="blue-btn registration-submit"><span>Зарегистрироваться</span></button>
+                    </div>
                 </form>
             </div>
 
         </div>
-    </main>
 
+        <button class="show-reg-success">click me</button>
+    </main>
+    <footer class="footer">
+        <div class="content">
+            <div class="footer-column">
+                <a href="/" class="footer-logo">
+                    <img src="../../assets/images/footer-logo.png" alt="logo" width="222" height="51">
+                </a>
+                <ul class="contacts">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_76_1329)">
+                                <path d="M15.0499 5.13818C16.0267 5.32875 16.9243 5.80644 17.628 6.51012C18.3317 7.2138 18.8094 8.11145 18.9999 9.08818M15.0499 1.13818C17.0792 1.36362 18.9715 2.27236 20.4162 3.71519C21.8608 5.15802 22.7719 7.04919 22.9999 9.07818M21.9999 17.0582V20.0582C22.0011 20.3367 21.944 20.6124 21.8324 20.8675C21.7209 21.1227 21.5572 21.3518 21.352 21.54C21.1468 21.7283 20.9045 21.8717 20.6407 21.9609C20.3769 22.0501 20.0973 22.0833 19.8199 22.0582C16.7428 21.7238 13.7869 20.6723 11.1899 18.9882C8.77376 17.4528 6.72527 15.4044 5.18993 12.9882C3.49991 10.3794 2.44818 7.40918 2.11993 4.31818C2.09494 4.04165 2.12781 3.76294 2.21643 3.49981C2.30506 3.23667 2.4475 2.99487 2.6347 2.7898C2.82189 2.58474 3.04974 2.42089 3.30372 2.30871C3.55771 2.19652 3.83227 2.13845 4.10993 2.13818H7.10993C7.59524 2.13341 8.06572 2.30526 8.43369 2.62172C8.80166 2.93817 9.04201 3.37763 9.10993 3.85818C9.23656 4.81825 9.47138 5.76091 9.80993 6.66818C9.94448 7.02611 9.9736 7.4151 9.89384 7.78906C9.81408 8.16303 9.6288 8.50629 9.35993 8.77818L8.08993 10.0482C9.51349 12.5517 11.5864 14.6246 14.0899 16.0482L15.3599 14.7782C15.6318 14.5093 15.9751 14.324 16.3491 14.2443C16.723 14.1645 17.112 14.1936 17.4699 14.3282C18.3772 14.6667 19.3199 14.9016 20.2799 15.0282C20.7657 15.0967 21.2093 15.3414 21.5265 15.7157C21.8436 16.09 22.0121 16.5678 21.9999 17.0582Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_76_1329">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.138184)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <a href="tel:+375172665313">+375 (17) 266-53-13</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M22 2.13818L11 13.1382" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2.13818L15 22.1382L11 13.1382L2 9.13818L22 2.13818Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>220125, г. Минск, ул. Уручская, 14 А</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M4 4.13818H20C21.1 4.13818 22 5.03818 22 6.13818V18.1382C22 19.2382 21.1 20.1382 20 20.1382H4C2.9 20.1382 2 19.2382 2 18.1382V6.13818C2 5.03818 2.9 4.13818 4 4.13818Z" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 6.13818L12 13.1382L2 6.13818" stroke="#8AB73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <a href="mailto:mail@vostochny.by">mail@vostochny.by</a>
+                    </li>
+                </ul>
+                <div class="qr-wrap">
+                    <img src="../../assets/images/qr.png" alt="qr">
+                </div>
+            </div>
+            <div class="footer-column">
+                <p>Документы</p>
+                <ul class="footer-nav">
+                    <li><a href="#">Инструкция</a></li>
+                    <li><a href="#">Регламенты</a></li>
+                    <li><a href="#">Анкета ФЛ</a></li>
+                    <li><a href="#">Анкета ЮЛ</a></li>
+                    <li><a href="#">Соглашение</a></li>
+                    <li><a href="#">Заявление</a></li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="footer-column">
+                <div class="footer-links">
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Аукцион недвижимости</a></li>
+                    <li><a href="#">Аукцион автотранспорта</a></li>
+                </div>
+                <div class="info-wrap">
+                    <span>Сервисно-торговое республиканское унитарное предприятие "ТОРГОВЫЙ ДОМ "ВОСТОЧНЫЙ" Управления делами Президента Республики Беларусь ТОРГОВЫЙ ДОМ "ВОСТОЧНЫЙ".Свидетельство о государственной регистрации выдано Минским горисполкомом от 22.07.2024 г. с регистрационным номером 1475. Зарегистрирован в Торговом реестре Республики Беларусь 17.10.2016 №355491. УНП 101127633.Юр. адрес: 220125, г. Минск, ул. Уручская, 14 А.Время работы с понедельника по пятницу с 9:00 до 17:00. Контакты: +375 (17) 266-53-13, mail@vostochny.by.Уполномоченный на рассмотрение обращений покупателей: директор РУП "ТОРГОВЫЙ ДОМ "ВОСТОЧНЫЙ" Михалькевич А.И., запись по телефону +375 17 ххх-хх-хх.Уполномоченные по защите прав потребителей: отдел торговли и услуг администрации Фрунзенского района г. Минска, +375 17 348-39-06, +375 17 272-73-84.</span>
+                </div>
+                <div class="payment">
+                    <img src="../../assets/images/visa-light-large.svg" alt="payment-logo" width="48" height="32">
+                    <img src="../../assets/images/mastercard-light-large.svg" alt="payment-logo" width="48" height="32">
+                    <img src="../../assets/images/cirrus-light-large.svg" alt="payment-logo" width="48" height="32">
+                    <img src="../../assets/images/paypal-light-large.svg" alt="payment-logo" width="48" height="32">
+                </div>
+                <div class="copyright">
+                    <span>2023 © РУП “Торговый дом ”Восточный”</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="../../assets/script/script.js"></script>
 </body>
 </html>

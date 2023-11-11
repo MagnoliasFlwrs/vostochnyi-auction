@@ -94,6 +94,87 @@ if (showMoreBtn && paramsList) {
         paramsList.classList.toggle('show');
     })
 }
+//registration-modal
+
+const overlay = document.querySelector('.overlay');
+const registrationModal = document.querySelector('.registration-success-modal');
+const registrationModalCloseBtn = document.querySelector('.registration-success-modal .close-modal');
+
+function showRegistrationSuccess() {
+    overlay.classList.add('open');
+    registrationModal.classList.add('open');
+}
+function closeRegistrationSuccess() {
+    let closeArr = [overlay , registrationModalCloseBtn];
+    closeArr.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            overlay.classList.remove('open');
+            registrationModal.classList.remove('open');
+        })
+    })
+}
+
+// for testing modal
+const registrationModalShowBtn = document.querySelector('.show-reg-success');
+
+if(registrationModal) {
+    registrationModalShowBtn.addEventListener('click' , () => {
+        showRegistrationSuccess();
+    })
+    closeRegistrationSuccess();
+}
+
+// custom input type file
+
+const fileInputs = document.querySelectorAll('input[type="file"]');
+
+if (fileInputs) {
+    fileInputs.forEach(el => {
+        el.addEventListener('input' , (e)=> {
+            let labelValue = el.closest('.fileform').querySelector('.selectbutton span').innerHTML;
+            let fileName = ''
+            if (e.srcElement.files.length) {
+                fileName =  e.srcElement.files[0].name;
+
+            }
+            if (fileName) {
+                el.closest('.fileform').querySelector('.selectbutton span').innerHTML = fileName;
+            }
+            else {
+                el.closest('.fileform').querySelector('.selectbutton span').innerHTML = labelValue;
+            }
+        })
+    })
+}
+
+// take-part modal
+
+const takePartModal = document.querySelector('.take-part-modal');
+const takePartShowModalBtns = document.querySelectorAll('.take-part-btn');
+const takePartCloseBtn = document.querySelector('.take-part-modal .close-modal');
+
+function showTakePartModal() {
+    takePartModal.classList.add('open');
+    overlay.classList.add('open');
+}
+function closeTakePartModal() {
+    let closeArr = [takePartCloseBtn , overlay];
+    closeArr.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            takePartModal.classList.remove('open');
+            overlay.classList.remove('open');
+        })
+    })
+}
+if (takePartModal && takePartShowModalBtns) {
+    takePartShowModalBtns.forEach(el=> {
+        el.addEventListener('click' , (e)=> {
+            e.preventDefault();
+            showTakePartModal();
+        })
+    })
+    closeTakePartModal();
+}
 
 
 
