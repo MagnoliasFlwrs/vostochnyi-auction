@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if(tabsBtns){
       tabsBtns.forEach(function(el){
         el.addEventListener('click', function(ev){
-          makeActive(ev.target);
+          makeActive(ev.target.closest('li'));
         });
       });
     }
@@ -42,6 +42,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     tabs.forEach(function(el){
       el.classList.remove('active');
     });
+
     target.classList.add('active');
     targetTab.classList.add('active');
 
@@ -99,10 +100,12 @@ if (showMoreBtn && paramsList) {
 const overlay = document.querySelector('.overlay');
 const registrationModal = document.querySelector('.registration-success-modal');
 const registrationModalCloseBtn = document.querySelector('.registration-success-modal .close-modal');
+const body = document.querySelector('body')
 
 function showRegistrationSuccess() {
     overlay.classList.add('open');
     registrationModal.classList.add('open');
+    body.style.overflow = 'hidden';
 }
 function closeRegistrationSuccess() {
     let closeArr = [overlay , registrationModalCloseBtn];
@@ -110,6 +113,8 @@ function closeRegistrationSuccess() {
         el.addEventListener('click' , ()=> {
             overlay.classList.remove('open');
             registrationModal.classList.remove('open');
+            body.style.overflow = 'auto';
+
         })
     })
 }
@@ -156,6 +161,7 @@ const takePartCloseBtn = document.querySelector('.take-part-modal .close-modal')
 function showTakePartModal() {
     takePartModal.classList.add('open');
     overlay.classList.add('open');
+    body.style.overflow = 'hidden';
 }
 function closeTakePartModal() {
     let closeArr = [takePartCloseBtn , overlay];
@@ -163,6 +169,7 @@ function closeTakePartModal() {
         el.addEventListener('click' , ()=> {
             takePartModal.classList.remove('open');
             overlay.classList.remove('open');
+            body.style.overflow = 'auto';
         })
     })
 }
@@ -176,5 +183,66 @@ if (takePartModal && takePartShowModalBtns) {
     closeTakePartModal();
 }
 
+// login modal
+
+const loginModal = document.querySelector('.login-modal');
+const loginShowModalBtns = document.querySelectorAll('.show-login-modal');
+const loginCloseBtn = document.querySelector('.login-modal .close-modal');
+
+function showLoginModal() {
+    loginModal.classList.add('open');
+    overlay.classList.add('open');
+    body.style.overflow = 'hidden';
+}
+function closeLoginModal() {
+    let closeArr = [loginCloseBtn , overlay];
+    closeArr.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            loginModal.classList.remove('open');
+            overlay.classList.remove('open');
+            body.style.overflow = 'auto';
+        })
+    })
+}
+if (loginModal && loginShowModalBtns) {
+    loginShowModalBtns.forEach(el=> {
+        el.addEventListener('click' , (e)=> {
+            e.preventDefault();
+            showLoginModal();
+        })
+    })
+    closeLoginModal();
+}
+
+// exit modal
+
+const exitModal = document.querySelector('.exit-modal');
+const exitShowModalBtns = document.querySelectorAll('.show-exit-modal');
+const exitCloseBtns = document.querySelectorAll('.exit-modal .close-modal');
+
+function showExitModal() {
+    exitModal.classList.add('open');
+    overlay.classList.add('open');
+    body.style.overflow = 'hidden';
+}
+function closeExitModal() {
+    let closeArr = [...exitCloseBtns , overlay];
+    closeArr.forEach(el=> {
+        el.addEventListener('click' , ()=> {
+            exitModal.classList.remove('open');
+            overlay.classList.remove('open');
+            body.style.overflow = 'auto';
+        })
+    })
+}
+if (exitModal && exitShowModalBtns) {
+    exitShowModalBtns.forEach(el=> {
+        el.addEventListener('click' , (e)=> {
+            e.preventDefault();
+            showExitModal();
+        })
+    })
+    closeExitModal();
+}
 
 
