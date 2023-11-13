@@ -246,3 +246,72 @@ if (exitModal && exitShowModalBtns) {
 }
 
 
+// settings-tabs
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    const tabsBtns = document.querySelectorAll('.settings-tabs-panel li');
+    const tabs = document.querySelectorAll('.settings-tab-container .settings-tab-content');
+
+
+    if(tabsBtns){
+        tabsBtns.forEach(function(el){
+            el.addEventListener('click', function(ev){
+                makeActive(ev.target.closest('li'));
+            });
+        });
+    }
+    function makeActive(target){
+        let num = target.dataset.num;
+        let selector = '.settings-tab-container .settings-tab-content[data-num="'+num+'"]';
+        let targetTab = document.querySelector(selector);
+
+        tabsBtns.forEach(function(el){
+            el.classList.remove('active');
+        });
+        tabs.forEach(function(el){
+            el.classList.remove('active');
+        });
+
+        target.classList.add('active');
+        targetTab.classList.add('active');
+
+    }
+
+
+});
+
+// setting-change-user-data
+
+const clicableInputs = document.querySelectorAll('.input-wrapper-clicable');
+
+if (clicableInputs) {
+    function clearClicableInputsClasses(){
+        clicableInputs.forEach(el=> {
+            const currentInput = e.target.closest('.input-wrapper-clicable').querySelector('input');
+            if (currentInput.classList.contains('active')) {
+                currentInput.classList.remove('active');
+            }
+        })
+    }
+    clicableInputs.forEach(el => {
+        el.addEventListener('click' , (e)=> {
+            clearClicableInputsClasses();
+            const currentInput = e.target.closest('.input-wrapper-clicable').querySelector('input');
+            currentInput.classList.add('active');
+
+        })
+    })
+}
+
+//send sms
+
+const sendSmsBtn = document.querySelector('.send-sms-btn');
+const smsInner = document.querySelector('.sms-inner');
+
+if (sendSmsBtn) {
+    sendSmsBtn.addEventListener('click' , ()=> {
+        smsInner.classList.add('show');
+        sendSmsBtn.classList.add('hide')
+    })
+}
+
