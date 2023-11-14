@@ -3293,6 +3293,57 @@ body {
                                     }
                                 }
                             }
+                            .server-time {
+                                padding: 0;
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                border: none;
+                                @media (max-width: 768px) {
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    align-items: flex-start;
+                                }
+                                p {
+                                    color: #484848;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    line-height: 120%; /* 14.4px */
+                                    text-transform: uppercase;
+                                }
+                                div {
+                                    display: flex;
+                                    padding: 10px 20px;
+                                    align-items: flex-start;
+                                    gap: 20px;
+                                    border-radius: 5px;
+                                    background: #8AB73A;
+                                    .date {
+                                        color: #FFF;
+                                        font-family: Rounded Mplus 1c;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 150%; /* 24px */
+                                    }
+                                    .separator {
+                                        width: 1px;
+                                        height: 24px;
+                                        background: #B8DA7B;
+                                        padding: 0;
+                                        border: none;
+                                    }
+                                    .time {
+                                        color: #FFF;
+                                        font-family: Rounded Mplus 1c;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 800;
+                                        line-height: 150%; /* 24px */
+                                    }
+                                }
+                            }
                         }
                         .cab-subtitle {
                             color: #555E90;
@@ -3947,6 +3998,8 @@ body {
                                     gap: 30px;
                                     border-radius: 10px;
                                     border: 1px solid rgba(159, 170, 233, 0.37);
+                                    transition: .3s ease;
+                                    cursor: pointer;
                                     @media (max-width: 768px) {
                                         flex-direction: column;
                                         gap: 20px;
@@ -4033,11 +4086,237 @@ body {
                                             }
                                         }
                                     }
+                                    &:hover {
+                                        border: 1px solid #fff;
+                                        border-radius: 10px;
+                                        background: #FFF;
+                                        box-shadow: 0px 13px 16px -12px rgba(85, 94, 144, 0.28);
+                                    }
+                                }
+                            }
+                        }
+                        .accreditation-cards {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            .accreditation-card {
+                                display: flex;
+                                width: 100%;
+                                padding: 15px 30px;
+                                align-items: center;
+                                gap: 30px;
+                                border-radius: 10px;
+                                border: 1px solid rgba(159, 170, 233, 0.37);
+                                transition: .3s ease;
+                                cursor: pointer;
+                                justify-content: space-between;
+                                @media (max-width: 1024px) {
+                                    padding: 15px 10px;
+                                }
+                                @media (max-width: 768px) {
+                                    flex-direction: column;
+                                    gap: 20px;
+                                    align-items: flex-start;
+                                }
+                                &:hover {
+                                    border: 1px solid #fff;
+                                    border-radius: 10px;
+                                    background: #FFF;
+                                    box-shadow: 0px 13px 16px -12px rgba(85, 94, 144, 0.28);
+                                }
+                                p {
+                                    color: #484848;
+                                    font-family: Rounded Mplus 1c;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    line-height: 120%; /* 14.4px */
+                                    text-transform: uppercase;
+                                }
+                                .file-input-wrapper {
+                                    display: flex;
+                                    gap: 20px;
+                                    align-items: center;
+                                    @media (max-width: 768px) {
+                                        flex-direction: column;
+                                        gap: 20px;
+                                        align-items: flex-start;
+                                    }
+                                    .separator {
+                                        width: 1px;
+                                        height: 30px;
+                                        background: rgba(159, 170, 233, 0.48);
+                                        @media (max-width: 768px) {
+                                            display: none;
+                                        }
+                                    }
+                                    .file-name {
+                                        color: #555E90;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 150%; /* 30px */
+                                        @media (max-width: 1024px) {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                    .custom-fileform {
+                                        cursor: pointer;
+                                        transition: .3s ease;
+                                        position: relative;
+                                        .selectbutton {
+                                            display: flex;
+                                            height: 25px;
+                                            align-items: center;
+                                            gap: 10px;
+                                            color: #8AB73A;
+                                            font-size: 12px;
+                                            font-style: normal;
+                                            font-weight: 800;
+                                            line-height: 120%; /* 14.4px */
+                                            text-transform: uppercase;
+                                            cursor: pointer;
+                                            transition: .3s ease;
+
+                                            &:hover {
+                                                svg path {
+                                                    fill: #B8DA7B;
+                                                }
+                                            }
+                                        }
+                                        input[type="file"]{
+                                            cursor: pointer;
+                                            position:absolute;
+                                            top:0;
+                                            left:0;
+                                            width:100%;
+                                            -moz-opacity: 0;
+                                            filter: alpha(opacity=0);
+                                            opacity: 0;
+                                            //font-size: 150px;
+                                            height: 25px;
+                                            z-index:20;
+                                        }
+                                        &:hover {
+                                            .selectbutton {
+                                                color:#B8DA7B ;
+                                                svg path {
+                                                    fill: #B8DA7B;
+                                                }
+                                            }
+
+                                        }
+                                    }
+                                    .delete-btn {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 15px;
+                                        transition: .3s ease;
+                                        &:hover {
+                                            svg path {
+                                                fill: #FF9263;
+                                            }
+                                            span {
+                                                color: #FF9263;
+                                            }
+                                        }
+                                        span {
+                                            color: #F26122;
+                                            font-size: 12px;
+                                            font-style: normal;
+                                            font-weight: 800;
+                                            line-height: 120%; /* 14.4px */
+                                            text-transform: uppercase;
+                                            transition: .3s ease;
+                                        }
+                                    }
                                 }
                             }
                         }
                         .controls {
                             margin-top: 20px;
+                        }
+                        .auction-cards {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            .auction-card {
+                                display: flex;
+                                width: 100%;
+                                padding: 20px;
+                                align-items: center;
+                                gap: 20px;
+                                border-radius: 10px;
+                                background: #F8F9FF;
+                                box-shadow: 0px 5px 5px -3px rgba(85, 94, 144, 0.25);
+                                @media (max-width: 768px) {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    background: #FCFCFF;
+                                    box-shadow: 0px 21px 18px -16px rgba(85, 94, 144, 0.25);
+                                }
+                                .auction-image {
+                                    width: 154px;
+                                    height: 102px;
+                                    border-radius: 2px;
+                                    flex-shrink: 0;
+                                    overflow: hidden;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                                .auction-info  {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+                                    .lot {
+                                        color: #555E90;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 800;
+                                        line-height: 120%; /* 14.4px */
+                                        text-transform: uppercase;
+                                    }
+                                    .auction-title {
+                                        color: #484848;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+
+                                        @media (max-width: 1024px) {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                                a {
+                                    display: flex;
+                                    padding: 15px 30px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 20px;
+                                    border-radius: 10px;
+                                    border: 1px solid rgba(159, 170, 233, 0.48);
+                                    color: #555E90;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 150%; /* 24px */
+                                    transition: .3s ease;
+                                    flex-shrink: 0;
+
+                                    &:hover {
+                                        background: #9FAAE9;
+                                        color: #fff;
+                                    }
+                                }
+                            }
                         }
 
                     }

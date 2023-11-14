@@ -131,7 +131,7 @@ if(registrationModal) {
 
 // custom input type file
 
-const fileInputs = document.querySelectorAll('input[type="file"]');
+const fileInputs = document.querySelectorAll('.fileform input[type="file"]');
 
 if (fileInputs) {
     fileInputs.forEach(el => {
@@ -312,6 +312,37 @@ if (sendSmsBtn) {
     sendSmsBtn.addEventListener('click' , ()=> {
         smsInner.classList.add('show');
         sendSmsBtn.classList.add('hide')
+    })
+}
+
+// accreditation input
+
+const accrFileInputs = document.querySelectorAll('.file-input-wrapper');
+
+if (accrFileInputs) {
+    accrFileInputs.forEach(el=> {
+        el.addEventListener('click' , (e)=> {
+            let currentInputWrap = e.target.closest('.file-input-wrapper')
+            let currInput = currentInputWrap.querySelector('input[type="file"]');
+            let currFileNameField = currentInputWrap.querySelector('.file-name');
+            let currDeleteBtn =  currentInputWrap.querySelector('.delete-btn');
+
+            let fileName = ''
+            currInput.addEventListener('input' , (e) => {
+                if (e.srcElement.files.length) {
+                    fileName =  e.srcElement.files[0].name;
+                }
+                if (fileName) {
+                    currFileNameField.innerHTML = fileName;
+                }
+            })
+
+            currDeleteBtn.addEventListener('click' , ()=>{
+                currInput.value = '';
+                currFileNameField.innerHTML = '';
+            })
+
+        })
     })
 }
 
