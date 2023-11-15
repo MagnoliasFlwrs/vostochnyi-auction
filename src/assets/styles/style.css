@@ -3344,6 +3344,7 @@ body {
   width: 100%;
 }
 .account-body .content .right-side .tab-container .tab-content {
+  position: relative;
   width: 100%;
   display: none;
 }
@@ -3447,6 +3448,7 @@ body {
   font-weight: 800;
   line-height: 120%; /* 14.4px */
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .account-body .content .right-side .tab-container .tab-content .tab-inner .title-row .server-time div {
   display: flex;
@@ -3644,7 +3646,9 @@ body {
 }
 .account-body .content .right-side .tab-container .tab-content .tab-inner .user-data li span.clicable-span {
   display: flex;
-  max-width: 424px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 380px;
   width: 100%;
   padding: 3px;
   gap: 20px;
@@ -3657,11 +3661,14 @@ body {
   border: 1px solid transparent;
   transition: 0.3s ease;
   border-radius: 5px;
+  margin-right: 30px;
 }
 @media (max-width: 768px) {
   .account-body .content .right-side .tab-container .tab-content .tab-inner .user-data li span.clicable-span {
     font-size: 15px;
     gap: 10px;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 .account-body .content .right-side .tab-container .tab-content .tab-inner .user-data li span.clicable-span:after {
@@ -3866,6 +3873,7 @@ body {
   .account-body .content .right-side .tab-container .tab-content .tab-inner .settings-tabs .settings-tab-container .settings-tab-content .settings-tab-inner .user-data li {
     border: none;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .account-body .content .right-side .tab-container .tab-content .tab-inner .settings-tabs .settings-tab-container .settings-tab-content .settings-tab-inner .user-data li:hover {
@@ -4476,6 +4484,462 @@ body {
 .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-cards .auction-card a:hover {
   background: #9FAAE9;
   color: #fff;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-inner.hide {
+  display: none;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full.active {
+  display: flex;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .back {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .back span {
+  color: #555E90;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 14.4px */
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .back:hover svg path {
+  fill: #9FAAE9;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .back:hover span {
+  color: #9FAAE9;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .articul {
+  color: #555E90;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 14.4px */
+  text-transform: uppercase;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info {
+  border-radius: 10px;
+  background: #F8F9FF;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 1200px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info {
+    padding: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info {
+    padding: 10px;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 1024px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info {
+    flex-direction: column-reverse;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info ul li {
+  display: flex;
+  padding: 15px 0px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-top: 1px solid rgba(159, 170, 233, 0.28);
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info ul li:last-child {
+  border-bottom: 1px solid rgba(159, 170, 233, 0.28);
+}
+@media (max-width: 460px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info ul li {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info ul li span:first-child {
+  color: #484848;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 14.4px */
+  text-transform: uppercase;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info ul li span:last-child {
+  color: #555E90;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+@media (max-width: 1024px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info ul li span:last-child {
+    font-size: 16px;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info .image-wrapper {
+  max-width: 535px;
+  height: 355px;
+  width: 100%;
+  border-radius: 5.74px;
+  background: lightgray 50%/cover no-repeat;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info .image-wrapper {
+    max-width: 100%;
+    height: 555px;
+  }
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info .image-wrapper {
+    height: 275px;
+  }
+}
+@media (max-width: 460px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info .image-wrapper {
+    height: 205px;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .general-info .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet {
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 10px;
+  background: #555E90;
+}
+@media (max-width: 1375px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet {
+    padding: 20px 10px;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (max-width: 1250px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet p {
+  color: #FFF;
+  font-family: Rounded Mplus 1c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 12px */
+  text-transform: uppercase;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-hours, .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-minutes, .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-seconds {
+  display: flex;
+  height: 60px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-hours span, .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-minutes span, .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-seconds span {
+  color: #FFF;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 35px */
+  transition: 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-hours span, .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-minutes span, .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-seconds span {
+    font-size: 25px;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .time-to-bet .timer .timer-separator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='18' viewBox='0 0 3 18' fill='none'%3E%3Cpath d='M2.53846 4.5418C2.26346 4.83795 1.91442 4.98603 1.49135 4.98603C1.06827 4.98603 0.708654 4.83795 0.4125 4.5418C0.1375 4.24565 0 3.89661 0 3.49469V2.13026C0 1.70719 0.1375 1.35815 0.4125 1.08315C0.708654 0.786993 1.06827 0.638916 1.49135 0.638916C1.91442 0.638916 2.26346 0.786993 2.53846 1.08315C2.83462 1.35815 2.98269 1.70719 2.98269 2.13026V3.49469C2.98269 3.89661 2.83462 4.24565 2.53846 4.5418ZM2.53846 16.9168C2.26346 17.213 1.91442 17.361 1.49135 17.361C1.06827 17.361 0.708654 17.213 0.4125 16.9168C0.1375 16.6206 0 16.2716 0 15.8697V14.5053C0 14.0822 0.1375 13.7331 0.4125 13.4581C0.708654 13.162 1.06827 13.0139 1.49135 13.0139C1.91442 13.0139 2.26346 13.162 2.53846 13.4581C2.83462 13.7331 2.98269 14.0822 2.98269 14.5053V15.8697C2.98269 16.2716 2.83462 16.6206 2.53846 16.9168Z' fill='white'/%3E%3C/svg%3E");
+  display: block;
+  transition: 0.3s ease;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .column p {
+  color: #FFF;
+  font-family: Rounded Mplus 1c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 12px */
+  text-transform: uppercase;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .column input {
+  display: flex;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 624px;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 1px solid #C6CAE2;
+  background: #FFF;
+  outline: none;
+  height: 60px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form .column input::placeholder {
+  color: #C6CAE2;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form button {
+  display: flex;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #8AB73A;
+  color: #FFF;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 42.5px */
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form button:hover {
+  background: #B8DA7B;
+}
+@media (max-width: 1375px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form button {
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bet form button {
+    font-size: 20px;
+    height: fit-content;
+    padding: 10px 20px;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-title {
+  color: #555E90;
+  font-family: Rounded Mplus 1c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #DEE2F6;
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head {
+    display: none;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head span {
+  color: #555E90;
+  text-align: center;
+  font-family: Rounded Mplus 1c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 19.2px */
+}
+@media (max-width: 1024px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head span {
+    font-size: 14px;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head span:first-child {
+  width: 34px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head span:nth-child(2) {
+  width: 84px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head span:nth-child(3) {
+  width: 175px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head span:nth-child(4) {
+  width: 120px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-head span:last-child {
+  width: 122px;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-top: 1px solid rgba(159, 170, 233, 0.28);
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card:last-child {
+  border-bottom: 1px solid rgba(159, 170, 233, 0.28);
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div span {
+  color: #484848;
+  text-align: center;
+  font-family: Rounded Mplus 1c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div span {
+    text-align: right;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div span:first-child {
+  color: #555E90;
+  text-align: left;
+  font-family: Rounded Mplus 1c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 19.2px */
+  display: none;
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div span:first-child {
+    display: block;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:first-child {
+  width: 34px;
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:first-child {
+    width: 100%;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:nth-child(2) {
+  width: 84px;
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:nth-child(2) {
+    width: 100%;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:nth-child(3) {
+  width: 175px;
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:nth-child(3) {
+    width: 100%;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:nth-child(4) {
+  width: 120px;
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:nth-child(4) {
+    width: 100%;
+  }
+}
+.account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:last-child {
+  width: 122px;
+}
+@media (max-width: 768px) {
+  .account-body .content .right-side .tab-container .tab-content .tab-inner .auction-card-full .lot-info .bargaining .bargaining-body .bargaining-card div:last-child {
+    width: 100%;
+  }
 }
 .account-body .content .right-side .tab-container .tab-content.active {
   display: block;

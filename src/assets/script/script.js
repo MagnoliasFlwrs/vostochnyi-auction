@@ -346,3 +346,27 @@ if (accrFileInputs) {
     })
 }
 
+// my-auction
+
+const auctionInner = document.querySelector('.auction-inner');
+const roomBtns = document.querySelectorAll('.to-room');
+const room = document.querySelector('.auction-card-full');
+
+
+if (roomBtns) {
+    roomBtns.forEach(el=> {
+        el.addEventListener('click' , (e)=> {
+            e.preventDefault();
+            auctionInner.classList.add('hide');
+            room.classList.add('active');
+        })
+    })
+
+}
+if(room) {
+    const backBtn = document.querySelector('.back');
+    backBtn.addEventListener('click' , ()=>{
+        auctionInner.classList.remove('hide');
+        room.classList.remove('active');
+    })
+}
