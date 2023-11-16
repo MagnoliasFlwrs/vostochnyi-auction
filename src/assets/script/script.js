@@ -26,9 +26,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     if(tabsBtns){
       tabsBtns.forEach(function(el){
-        el.addEventListener('click', function(ev){
-          makeActive(ev.target.closest('li'));
-        });
+          if (!el.classList.contains('tabs-panel-wrapper')) {
+              el.addEventListener('click', function(ev){
+                  makeActive(ev.target.closest('li'));
+              });
+          }
+
       });
     }
   function makeActive(target){
@@ -368,5 +371,25 @@ if(room) {
     backBtn.addEventListener('click' , ()=>{
         auctionInner.classList.remove('hide');
         room.classList.remove('active');
+    })
+}
+
+
+const tabsPanelWrapper =  document.querySelector('.tabs-panel-wrapper');
+const tabsPanelWrapperBtn = document.querySelector('.tabs-panel-wrapper div');
+const tabsPanelList = document.querySelector('.tabs-panel-wrapper ul');
+if (tabsPanelWrapper) {
+    tabsPanelWrapperBtn.addEventListener('click' ,  ()=> {
+        tabsPanelWrapper.classList.toggle('open');
+        tabsPanelList.classList.toggle('show');
+    })
+
+    document.addEventListener('click' ,  (e) => {
+        if (tabsPanelWrapper.classList.contains('open') && !e.target.closest('.tabs-panel-wrapper')) {
+            console.log(!e.target.classList.contains('tabs-panel-wrapper'))
+            console.log(e)
+            tabsPanelWrapper.classList.remove('open');
+            tabsPanelList.classList.remove('show');
+        }
     })
 }
