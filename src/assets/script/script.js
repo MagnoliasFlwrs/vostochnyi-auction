@@ -393,3 +393,33 @@ if (tabsPanelWrapper) {
         }
     })
 }
+
+
+const accreditationListItems = document.querySelectorAll('.accreditation-list-item');
+console.log(accreditationListItems)
+if (accreditationListItems) {
+    function clearAccreditationListItemsClasses() {
+        accreditationListItems.forEach(el=> {
+            if (el.classList.contains('open')) {
+                el.classList.remove('open');
+            }
+        })
+    }
+    document.addEventListener('click' , (e)=>{
+        if (!e.target.closest('.accreditation-list-item')) {
+            accreditationListItems.forEach(el=> {
+                if (el.classList.contains('open')) {
+                    el.classList.remove('open');
+                }
+            })
+        }
+    })
+    accreditationListItems.forEach(el=> {
+        el.addEventListener('click' , (e)=> {
+            let currItem = e.target.closest('.accreditation-list-item');
+            clearAccreditationListItemsClasses()
+            currItem.classList.toggle('open');
+        })
+    })
+
+}
