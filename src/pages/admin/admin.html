@@ -68,6 +68,45 @@
     </div>
   </div>
 </div>
+<div class="allow-modal">
+  <div class="close-row">
+                <span class="close-modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="white"/>
+                    </svg>
+                </span>
+  </div>
+  <div class="modal-body">
+    <p>Участник  прошел аккредитацию <br> <span>(регистрацию на аукцион)</span></p>
+    <div class="confirm-btns">
+      <button class="close-modal">Допустить</button>
+      <button class="close-modal">Отменить</button>
+    </div>
+  </div>
+</div>
+<div class="not-allow-modal">
+  <div class="close-row">
+      <span class="close-modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="white"/>
+          </svg>
+      </span>
+  </div>
+  <div class="modal-body">
+    <p>Участник не допущен</p>
+    <form>
+      <div class="comment-wrap">
+        <span>Описание причины</span>
+        <textarea placeholder="Напишите ваше сообщение..."></textarea>
+      </div>
+      <div class="confirm-btns">
+        <button type="submit" class="close-modal">Допустить</button>
+        <button type="reset" class="close-modal">Отменить</button>
+      </div>
+    </form>
+
+  </div>
+</div>
 <header class="header">
   <div class="content">
     <a href="/" class="logo">
@@ -899,8 +938,8 @@
                           <div class="radio-inner">
                             <fieldset>
                               <div>
-                                <input type="radio" id="resident324" name="radio-group3" checked>
-                                <label for="resident3">Резидент</label>
+                                <input type="radio" id="resident324" name="radio-group4" checked>
+                                <label for="resident324">Резидент</label>
                               </div>
                             </fieldset>
                           </div>
@@ -1043,318 +1082,346 @@
 
             </div>
           </div>
-          <div data-num="1" class="tab-content">
-            <div class="tab-inner">
-              <div class="auction-inner">
-                <div class="title-row">
-                  <h2>Мои аукционы</h2>
-                  <div class="server-time">
-                    <p>Дата и время сервера:</p>
-                    <div>
-                      <span class="date">20.08.2024</span>
-                      <div class="separator"></div>
-                      <span class="time">13:56</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="auction-cards">
-                  <div class="auction-card">
-                    <div class="auction-image">
-                      <img src="../../assets/images/auctionimage.png" alt="auction-image">
-                    </div>
-                    <div class="auction-info">
-                      <p class="lot">Лот <span>223366</span> </p>
-                      <p class="auction-title">1/10 доли в праве собственности на изолированное помещение
-                        г. Минск, ул. Тиражная, 36-2</p>
-                    </div>
-                    <a class="to-room" href="#" >В комнату</a>
-                  </div>
-                  <div class="auction-card">
-                    <div class="auction-image">
-                      <img src="../../assets/images/auctionimage.png" alt="auction-image">
-                    </div>
-                    <div class="auction-info">
-                      <p class="lot">Лот <span>223366</span> </p>
-                      <p class="auction-title">1/10 доли в праве собственности на изолированное помещение
-                        г. Минск, ул. Тиражная, 36-2</p>
-                    </div>
-                    <a class="to-room" href="#" >В комнату</a>
-                  </div>
-                  <div class="auction-card">
-                    <div class="auction-image">
-                      <img src="../../assets/images/auctionimage.png" alt="auction-image">
-                    </div>
-                    <div class="auction-info">
-                      <p class="lot">Лот <span>223366</span> </p>
-                      <p class="auction-title">1/10 доли в праве собственности на изолированное помещение
-                        г. Минск, ул. Тиражная, 36-2</p>
-                    </div>
-                    <a class="to-room" href="#" >В комнату</a>
-                  </div>
-                  <div class="auction-card">
-                    <div class="auction-image">
-                      <img src="../../assets/images/auctionimage.png" alt="auction-image">
-                    </div>
-                    <div class="auction-info">
-                      <p class="lot">Лот <span>223366</span> </p>
-                      <p class="auction-title">1/10 доли в праве собственности на изолированное помещение
-                        г. Минск, ул. Тиражная, 36-2</p>
-                    </div>
-                    <a class="to-room" href="#" >В комнату</a>
-                  </div>
-                  <div class="auction-card">
-                    <div class="auction-image">
-                      <img src="../../assets/images/auctionimage.png" alt="auction-image">
-                    </div>
-                    <div class="auction-info">
-                      <p class="lot">Лот <span>223366</span> </p>
-                      <p class="auction-title">1/10 доли в праве собственности на изолированное помещение
-                        г. Минск, ул. Тиражная, 36-2</p>
-                    </div>
-                    <a class="to-room" href="#" >В комнату</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="auction-card-full">
-                <div class="back">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H7.41421L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z" fill="#555E90"/>
-                  </svg>
-                  <span>Вернуться</span>
-                </div>
-                <div class="title-row">
-                  <h2>Hyundai Creta 1.6 AT, 2021, 56 650 км</h2>
-                  <div class="server-time">
-                    <p>Дата и время сервера:</p>
-                    <div>
-                      <span class="date">20.08.2024</span>
-                      <div class="separator"></div>
-                      <span class="time">13:56</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="articul">Лот 223669</p>
-                <div class="lot-info">
-                  <div class="general-info">
-                    <ul>
-                      <li>
-                        <span>Количество товара:</span>
-                        <span>1 шт.</span>
-                      </li>
-                      <li>
-                        <span>Количество участников:</span>
-                        <span>25</span>
-                      </li>
-                      <li>
-                        <span>ваш код участника:</span>
-                        <span>316549331</span>
-                      </li>
-                      <li>
-                        <span>сумма последней ставки:</span>
-                        <span>3 320 BYN</span>
-                      </li>
-                      <li>
-                        <span>текущий статус аукциона:</span>
-                        <span>Равные ставки</span>
-                      </li>
-                    </ul>
-                    <div class="image-wrapper">
-                      <img src="../../assets/images/car.png" alt="lot-image">
-                    </div>
-                  </div>
-                  <div class="bet">
-                    <form>
-                      <div class="time-to-bet">
-                        <p>Оставшееся время на ставку</p>
-                        <div class="timer">
-                          <div class="timer-hours"><span>12</span></div>
-                          <div class="timer-separator"></div>
-                          <div class="timer-minutes"><span>34</span></div>
-                          <div class="timer-separator"></div>
-                          <div class="timer-seconds"><span>55</span></div>
-                        </div>
-                      </div>
-                      <div class="column">
-                        <p>Предложить новую ставку с учетом шага аукциона</p>
-                        <input type="tel" placeholder="10 000 BYN">
-                      </div>
-                      <button type="submit">Сделать ставку</button>
-                    </form>
-                  </div>
-                  <div class="bargaining">
-                    <p class="bargaining-title">Ход торгов</p>
-                    <div class="bargaining-body">
-                      <div class="bargaining-head">
-                        <span>Шаг</span>
-                        <span>Код<br>участника</span>
-                        <span>Дата и время подачи <br>предложения</span>
-                        <span>Предложенная<br>цена BYN</span>
-                        <span>Эквивалент $ <br> по курсу НБ РБ</span>
-                      </div>
-                      <div class="bargaining-card">
-                        <div>
-                          <span>Шаг</span>
-                          <span>1</span>
-                        </div>
-                        <div>
-                          <span>Код<br>участника</span>
-                          <span>233651</span>
-                        </div>
-                        <div>
-                          <span>Дата и время подачи <br>предложения</span>
-                          <span>29.09.2023 16:11</span>
-                        </div>
-                        <div>
-                          <span>Предложенная<br>цена BYN</span>
-                          <span>10 250</span>
-                        </div>
-                        <div>
-                          <span>Эквивалент $ <br> по курсу НБ РБ</span>
-                          <span>3 118</span>
-                        </div>
-
-                      </div>
-                      <div class="bargaining-card">
-                        <div>
-                          <span>Шаг</span>
-                          <span>1</span>
-                        </div>
-                        <div>
-                          <span>Код<br>участника</span>
-                          <span>233651</span>
-                        </div>
-                        <div>
-                          <span>Дата и время подачи <br>предложения</span>
-                          <span>29.09.2023 16:11</span>
-                        </div>
-                        <div>
-                          <span>Предложенная<br>цена BYN</span>
-                          <span>10 250</span>
-                        </div>
-                        <div>
-                          <span>Эквивалент $ <br> по курсу НБ РБ</span>
-                          <span>3 118</span>
-                        </div>
-
-                      </div>
-                      <div class="bargaining-card">
-                        <div>
-                          <span>Шаг</span>
-                          <span>1</span>
-                        </div>
-                        <div>
-                          <span>Код<br>участника</span>
-                          <span>233651</span>
-                        </div>
-                        <div>
-                          <span>Дата и время подачи <br>предложения</span>
-                          <span>29.09.2023 16:11</span>
-                        </div>
-                        <div>
-                          <span>Предложенная<br>цена BYN</span>
-                          <span>10 250</span>
-                        </div>
-                        <div>
-                          <span>Эквивалент $ <br> по курсу НБ РБ</span>
-                          <span>3 118</span>
-                        </div>
-
-                      </div>
-                      <div class="bargaining-card">
-                        <div>
-                          <span>Шаг</span>
-                          <span>1</span>
-                        </div>
-                        <div>
-                          <span>Код<br>участника</span>
-                          <span>233651</span>
-                        </div>
-                        <div>
-                          <span>Дата и время подачи <br>предложения</span>
-                          <span>29.09.2023 16:11</span>
-                        </div>
-                        <div>
-                          <span>Предложенная<br>цена BYN</span>
-                          <span>10 250</span>
-                        </div>
-                        <div>
-                          <span>Эквивалент $ <br> по курсу НБ РБ</span>
-                          <span>3 118</span>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          <div data-num="2" class="tab-content ">
-            <div class="tab-inner">
+          <div data-num="1" class="tab-content toggle-list">
+            <div class="tab-inner ">
               <div class="title-row">
-                <h2>Сообщения</h2>
+                <h2>Аукцион недвижимости</h2>
               </div>
-              <div class="messages-panel">
-                <div class="messages-head">
-                  <p class="date">Дата</p>
-                  <p class="type">Тип сообщения</p>
-                  <p class="message-inner">Содержание</p>
-                  <p class="status">Статус</p>
-                </div>
-                <div class="messages-wrapper">
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Окончание аккредитации</p>
-                    <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
-                    <p class="status active">Активно</p>
-                  </div>
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Заявка на аккредитацию</p>
-                    <p class="message-inner">Аккредитация пройдена дата прохождения аккредитации пользователем. Статус Вашей аккредитации</p>
-                    <p class="status denied">Отказано</p>
-                  </div>
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Окончание аккредитации</p>
-                    <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
-                    <p class="status active">Активно</p>
-                  </div>
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Заявка на аккредитацию</p>
-                    <p class="message-inner">Аккредитация пройдена дата прохождения аккредитации пользователем. Статус Вашей аккредитации</p>
-                    <p class="status denied">Отказано</p>
-                  </div>
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Окончание аккредитации</p>
-                    <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
-                    <p class="status active">Активно</p>
-                  </div>
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Заявка на аккредитацию</p>
-                    <p class="message-inner">Аккредитация пройдена дата прохождения аккредитации пользователем. Статус Вашей аккредитации</p>
-                    <p class="status denied">Отказано</p>
-                  </div>
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Окончание аккредитации</p>
-                    <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
-                    <p class="status active">Активно</p>
-                  </div>
-                  <div class="message-card">
-                    <p class="date">22.05.2023</p>
-                    <p class="type">Заявка на аккредитацию</p>
-                    <p class="message-inner">Аккредитация пройдена дата прохождения аккредитации пользователем. Статус Вашей аккредитации</p>
-                    <p class="status denied">Отказано</p>
-                  </div>
+              <div class="add-auction">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4C12.5523 4 13 4.44771 13 5V11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H13V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H11V5C11 4.44771 11.4477 4 12 4Z" fill="white"/>
+                </svg>
+                <span>Загрузить аукцион</span>
+              </div>
+              <div class="admin-auction-wrapper">
+                <div class="auction-list-head">
+                  <div class="image">Изображение</div>
+                  <div class="separator"></div>
+                  <div class="lot-num">№ лота</div>
+                  <div class="separator"></div>
+                  <div class="auction-title">Наименование</div>
+                  <div class="separator"></div>
+                  <div class="type">Вид имущества</div>
+                  <div class="separator"></div>
+                  <div class="date-end">Дата <br> <span>окончания <br>приема заявок </span></div>
+                  <div class="separator"></div>
+                  <div class="date">дата<br>укциона</div>
+                  <div class="separator"></div>
+                  <div class="status">Статус</div>
 
                 </div>
+                <a href="../admin-product-page/admin-product-page.html" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="../admin-product-page/admin-product-page.html" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
               </div>
               <ul class="controls">
                 <li>
@@ -1384,262 +1451,382 @@
                 </li>
                 <li class="control-num"><span>63</span></li>
               </ul>
+            </div>
+          </div>
+          <div data-num="2" class="tab-content toggle-list">
+            <div class="tab-inner ">
+              <div class="title-row">
+                <h2>Аукцион автотранспорта</h2>
+              </div>
+              <div class="add-auction">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 4C12.5523 4 13 4.44771 13 5V11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H13V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H11V5C11 4.44771 11.4477 4 12 4Z" fill="white"/>
+                </svg>
+                <span>Загрузить аукцион</span>
+              </div>
+              <div class="admin-auction-wrapper">
+                <div class="auction-list-head">
+                  <div class="image">Изображение</div>
+                  <div class="separator"></div>
+                  <div class="lot-num">№ лота</div>
+                  <div class="separator"></div>
+                  <div class="auction-title">Наименование</div>
+                  <div class="separator"></div>
+                  <div class="type">Вид имущества</div>
+                  <div class="separator"></div>
+                  <div class="date-end">Дата <br> <span>окончания <br>приема заявок </span></div>
+                  <div class="separator"></div>
+                  <div class="date">дата<br>укциона</div>
+                  <div class="separator"></div>
+                  <div class="status">Статус</div>
 
+                </div>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+                <a href="#" class="auction-list-item">
+                  <div class="image">
+                    <span>Изображение</span>
+                    <div class="img-wrap">
+                      <img src="../../assets/images/car-mini.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="lot-num">
+                    <span>№ лота</span>
+                    <p>123333</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="auction-title">
+                    <span>Наименование</span>
+                    <p>Hyundai Creta 1.6 AT, 2021, 56 650 км</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="type">
+                    <span>Вид имущества</span>
+                    <p>легковой автомобиль</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date-end">
+                    <span>Дата <br>окончания <br>приема заявок</span>
+                    <p>31.12.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="date">
+                    <span>дата<br>укциона</span>
+                    <p>01.10.2023</p>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="status">
+                    <span>Статус</span>
+                    <p>Прием заявок</p>
+                  </div>
+
+                </a>
+              </div>
+              <ul class="controls">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M11.7071 5.29289C11.3166 4.90237 10.6834 4.90237 10.2929 5.29289L4.29289 11.2929C3.90237 11.6834 3.90237 12.3166 4.29289 12.7071L10.2929 18.7071C10.6834 19.0976 11.3166 19.0976 11.7071 18.7071C12.0976 18.3166 12.0976 17.6834 11.7071 17.2929L6.41421 12L11.7071 6.70711C12.0976 6.31658 12.0976 5.68342 11.7071 5.29289ZM17.7071 5.29289C17.3166 4.90237 16.6834 4.90237 16.2929 5.29289L10.2929 11.2929C10.1054 11.4804 10 11.7348 10 12C10 12.2652 10.1054 12.5196 10.2929 12.7071L16.2929 18.7071C16.6834 19.0976 17.3166 19.0976 17.7071 18.7071C18.0976 18.3166 18.0976 17.6834 17.7071 17.2929L12.4142 12L17.7071 6.70711C18.0976 6.31658 18.0976 5.68342 17.7071 5.29289Z" fill="#555E90"/>
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M14.7071 18.7071C15.0976 18.3166 15.0976 17.6834 14.7071 17.2929L9.41421 12L14.7071 6.70711C15.0976 6.31658 15.0976 5.68342 14.7071 5.29289C14.3166 4.90237 13.6834 4.90237 13.2929 5.29289L7.29289 11.2929C6.90237 11.6834 6.90237 12.3166 7.29289 12.7071L13.2929 18.7071C13.6834 19.0976 14.3166 19.0976 14.7071 18.7071Z" fill="#555E90"/>
+                  </svg>
+                </li>
+                <li class="control-num active"><span>1</span></li>
+                <li class="control-num"><span>2</span></li>
+                <li class="control-num"><span>3</span></li>
+                <li class="control-num"><span>4</span></li>
+                <li class="control-num"><span>5</span></li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071Z" fill="#555E90"/>
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12.2929 5.29289C12.6834 4.90237 13.3166 4.90237 13.7071 5.29289L19.7071 11.2929C20.0976 11.6834 20.0976 12.3166 19.7071 12.7071L13.7071 18.7071C13.3166 19.0976 12.6834 19.0976 12.2929 18.7071C11.9024 18.3166 11.9024 17.6834 12.2929 17.2929L17.5858 12L12.2929 6.70711C11.9024 6.31658 11.9024 5.68342 12.2929 5.29289ZM6.29289 5.29289C6.68342 4.90237 7.31658 4.90237 7.70711 5.29289L13.7071 11.2929C13.8946 11.4804 14 11.7348 14 12C14 12.2652 13.8946 12.5196 13.7071 12.7071L7.70711 18.7071C7.31658 19.0976 6.68342 19.0976 6.29289 18.7071C5.90237 18.3166 5.90237 17.6834 6.29289 17.2929L11.5858 12L6.29289 6.70711C5.90237 6.31658 5.90237 5.68342 6.29289 5.29289Z" fill="#555E90"/>
+                  </svg>
+                </li>
+                <li class="control-num"><span>63</span></li>
+              </ul>
             </div>
           </div>
           <div data-num="3" class="tab-content ">
             <div class="tab-inner">
               <div class="title-row">
-                <h2>Настройки</h2>
-                <div>
-                  <p>Окончание аккредитации: <span>20.08.2024</span> </p>
-                </div>
-              </div>
-              <div class="settings-tabs">
-                <ul class="settings-tabs-panel">
-                  <li data-num="0" >Личные данные</li>
-                  <li data-num="1" >Изменить пароль</li>
-                  <li data-num="2" class="active">Аккредитация</li>
-                </ul>
-                <div class="settings-tab-container">
-                  <div data-num="0" class="settings-tab-content">
-                    <div class="settings-tab-inner">
-                      <p class="cab-subtitle">Данные пользователя</p>
-                      <div class="radio-inner">
-                        <fieldset>
-                          <div>
-                            <input type="radio" id="resident3" name="radio-group3" checked>
-                            <label for="resident3">Резидент</label>
-                          </div>
-                          <div>
-                            <input type="radio" id="resident4" name="radio-group3">
-                            <label for="resident4">Не резидент</label>
-                          </div>
-                        </fieldset>
-                      </div>
-                      <ul class="user-data">
-                        <li>
-                          <span>Фамилия Имя Отчество:</span>
-                          <span class="clicable-span" contenteditable="true">Петров Иван Иванович</span>
-
-                        </li>
-                        <li>
-                          <span>Контактный телефон:</span>
-                          <span class="clicable-span" contenteditable="true">+375 29 555 55 55</span>
-                        </li>
-                        <li>
-                          <span>E-mail:</span>
-                          <span class="clicable-span" contenteditable="true">info@petrov.by</span>
-                        </li>
-                        <li>
-                          <span>Серия и номер паспорта:</span>
-                          <span class="clicable-span" contenteditable="true">000-00000</span>
-
-                        </li>
-                        <li>
-                          <span>Кем выдан:</span>
-                          <span class="clicable-span" contenteditable="true">МВД Белорусии</span>
-
-                        </li>
-                        <li>
-                          <span>Срок действия:</span>
-                          <span class="clicable-span" contenteditable="true">до 25.09.2028</span>
-
-                        </li>
-                        <li>
-                          <span>Личный номер:</span>
-                          <span class="clicable-span" contenteditable="true">65146468646464</span>
-                        </li>
-                      </ul>
-                      <div class="separator"></div>
-                      <p class="cab-subtitle">Адрес и место регистрации</p>
-                      <ul class="user-data">
-                        <li>
-                          <span>Адрес прописки:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Почтовый адрес:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-
-                      </ul>
-                      <div class="separator"></div>
-                      <p class="cab-subtitle">Реквизиты для возврата задатка</p>
-                      <ul class="user-data">
-                        <li>
-                          <span>ФИО держателя карты:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Наименование банка:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>УНП банка (9 знаков):</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Транзитный счёт банка (28 символов):</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Расчётный счёт держателя карты (28 символов):</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-
-                      </ul>
-                      <p class="cab-description">Без комиссии деньги возвращаются на Беларусбанк. Для МТБ, Приор и Беларусбанк транзитный счёт не требуется, зачисление производится непосредственно на счёт держателя карты</p>
-                      <label class="custom-checkbox">
-                        <input class="hidden-checkbox" type="checkbox" >
-                        <span class="checkbox">
-                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
-                                </span>
-                        <span>Реквизиты для возврата соответствуют данным аккредитации</span>
-                      </label>
-                      <div class="btns-wrapper">
-                        <button class="save-changes">Сохранить изменения</button>
-                        <button class="delete-changes">Отмена</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-num="1" class="settings-tab-content ">
-                    <div class="settings-tab-inner">
-                      <p class="cab-subtitle">Изменение пароля</p>
-                      <div class="pass-inner">
-                        <div class="input-wrap">
-                          <span>Пароль:</span>
-                          <input type="password" placeholder="*********">
-                        </div>
-                        <div class="input-wrap">
-                          <span>Подтверждение пароля:</span>
-                          <input type="password" placeholder="*********">
-                        </div>
-                      </div>
-                      <div class="sms-inner">
-                        <div class="input-wrap">
-                          <span>Введите код из СМС:</span>
-                          <input type="text">
-                        </div>
-                        <p>Отправить смс еще раз</p>
-                      </div>
-                      <button class="send-sms-btn">Отправить СМС с кодом</button>
-                      <div class="btns-wrapper">
-                        <button class="save-changes disabled-btn">Сохранить изменения</button>
-                        <button class="delete-changes">Отмена</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-num="2" class="settings-tab-content active">
-                    <div class="settings-tab-inner">
-                      <p class="cab-subtitle">Аккредитация</p>
-                      <div class="accreditation-cards">
-                        <div class="accreditation-card">
-                          <p>Анкета для юр лица</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accreditation-card">
-                          <p>Копия устава (учредительного договора)</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accreditation-card">
-                          <p>Анкета для юр лица</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accreditation-card">
-                          <p>Копия устава (учредительного договора)</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="btns-wrapper">
-                        <button class="save-changes">Отправить</button>
-                        <button class="delete-changes">Отмена</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div data-num="4" class="tab-content ">
-            <div class="tab-inner">
-              <div class="title-row">
                 <h2>Сообщения</h2>
               </div>
               <div class="messages-panel">
@@ -1650,7 +1837,7 @@
                   <p class="status">Статус</p>
                 </div>
                 <div class="messages-wrapper">
-                  <div class="message-card">
+                  <div class="message-card new-message">
                     <p class="date">22.05.2023</p>
                     <p class="type">Окончание аккредитации</p>
                     <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
@@ -1668,13 +1855,13 @@
                     <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
                     <p class="status active">Активно</p>
                   </div>
-                  <div class="message-card">
+                  <div class="message-card new-message">
                     <p class="date">22.05.2023</p>
                     <p class="type">Заявка на аккредитацию</p>
                     <p class="message-inner">Аккредитация пройдена дата прохождения аккредитации пользователем. Статус Вашей аккредитации</p>
                     <p class="status denied">Отказано</p>
                   </div>
-                  <div class="message-card">
+                  <div class="message-card new-message">
                     <p class="date">22.05.2023</p>
                     <p class="type">Окончание аккредитации</p>
                     <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
@@ -1686,7 +1873,7 @@
                     <p class="message-inner">Аккредитация пройдена дата прохождения аккредитации пользователем. Статус Вашей аккредитации</p>
                     <p class="status denied">Отказано</p>
                   </div>
-                  <div class="message-card">
+                  <div class="message-card new-message">
                     <p class="date">22.05.2023</p>
                     <p class="type">Окончание аккредитации</p>
                     <p class="message-inner">Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...Срок аккредитации истекает через 1 месяц. На данный момент Вы не сможете подать заявку на участие в аукционе. Просим пройти аккредитацию по...</p>
@@ -1732,254 +1919,14 @@
 
             </div>
           </div>
+          <div data-num="4" class="tab-content ">
+            <div class="tab-inner">
+
+            </div>
+          </div>
           <div data-num="5" class="tab-content ">
             <div class="tab-inner">
-              <div class="title-row">
-                <h2>Настройки</h2>
-                <div>
-                  <p>Окончание аккредитации: <span>20.08.2024</span> </p>
-                </div>
-              </div>
-              <div class="settings-tabs">
-                <ul class="settings-tabs-panel">
-                  <li data-num="0" >Личные данные</li>
-                  <li data-num="1" >Изменить пароль</li>
-                  <li data-num="2" class="active">Аккредитация</li>
-                </ul>
-                <div class="settings-tab-container">
-                  <div data-num="0" class="settings-tab-content">
-                    <div class="settings-tab-inner">
-                      <p class="cab-subtitle">Данные пользователя</p>
-                      <div class="radio-inner">
-                        <fieldset>
-                          <div>
-                            <input type="radio" id="resident3" name="radio-group3" checked>
-                            <label for="resident3">Резидент</label>
-                          </div>
-                          <div>
-                            <input type="radio" id="resident4" name="radio-group3">
-                            <label for="resident4">Не резидент</label>
-                          </div>
-                        </fieldset>
-                      </div>
-                      <ul class="user-data">
-                        <li>
-                          <span>Фамилия Имя Отчество:</span>
-                          <span class="clicable-span" contenteditable="true">Петров Иван Иванович</span>
 
-                        </li>
-                        <li>
-                          <span>Контактный телефон:</span>
-                          <span class="clicable-span" contenteditable="true">+375 29 555 55 55</span>
-                        </li>
-                        <li>
-                          <span>E-mail:</span>
-                          <span class="clicable-span" contenteditable="true">info@petrov.by</span>
-                        </li>
-                        <li>
-                          <span>Серия и номер паспорта:</span>
-                          <span class="clicable-span" contenteditable="true">000-00000</span>
-
-                        </li>
-                        <li>
-                          <span>Кем выдан:</span>
-                          <span class="clicable-span" contenteditable="true">МВД Белорусии</span>
-
-                        </li>
-                        <li>
-                          <span>Срок действия:</span>
-                          <span class="clicable-span" contenteditable="true">до 25.09.2028</span>
-
-                        </li>
-                        <li>
-                          <span>Личный номер:</span>
-                          <span class="clicable-span" contenteditable="true">65146468646464</span>
-                        </li>
-                      </ul>
-                      <div class="separator"></div>
-                      <p class="cab-subtitle">Адрес и место регистрации</p>
-                      <ul class="user-data">
-                        <li>
-                          <span>Адрес прописки:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Почтовый адрес:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-
-                      </ul>
-                      <div class="separator"></div>
-                      <p class="cab-subtitle">Реквизиты для возврата задатка</p>
-                      <ul class="user-data">
-                        <li>
-                          <span>ФИО держателя карты:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Наименование банка:</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>УНП банка (9 знаков):</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Транзитный счёт банка (28 символов):</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-                        <li>
-                          <span>Расчётный счёт держателя карты (28 символов):</span>
-                          <span class="clicable-span" contenteditable="true">г. Минск, улица Гусовского, 47</span>
-                        </li>
-
-                      </ul>
-                      <p class="cab-description">Без комиссии деньги возвращаются на Беларусбанк. Для МТБ, Приор и Беларусбанк транзитный счёт не требуется, зачисление производится непосредственно на счёт держателя карты</p>
-                      <label class="custom-checkbox">
-                        <input class="hidden-checkbox" type="checkbox" >
-                        <span class="checkbox">
-                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
-                                </span>
-                        <span>Реквизиты для возврата соответствуют данным аккредитации</span>
-                      </label>
-                      <div class="btns-wrapper">
-                        <button class="save-changes">Сохранить изменения</button>
-                        <button class="delete-changes">Отмена</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-num="1" class="settings-tab-content ">
-                    <div class="settings-tab-inner">
-                      <p class="cab-subtitle">Изменение пароля</p>
-                      <div class="pass-inner">
-                        <div class="input-wrap">
-                          <span>Пароль:</span>
-                          <input type="password" placeholder="*********">
-                        </div>
-                        <div class="input-wrap">
-                          <span>Подтверждение пароля:</span>
-                          <input type="password" placeholder="*********">
-                        </div>
-                      </div>
-                      <div class="sms-inner">
-                        <div class="input-wrap">
-                          <span>Введите код из СМС:</span>
-                          <input type="text">
-                        </div>
-                        <p>Отправить смс еще раз</p>
-                      </div>
-                      <button class="send-sms-btn">Отправить СМС с кодом</button>
-                      <div class="btns-wrapper">
-                        <button class="save-changes disabled-btn">Сохранить изменения</button>
-                        <button class="delete-changes">Отмена</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-num="2" class="settings-tab-content active">
-                    <div class="settings-tab-inner">
-                      <p class="cab-subtitle">Аккредитация</p>
-                      <div class="accreditation-cards">
-                        <div class="accreditation-card">
-                          <p>Анкета для юр лица</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accreditation-card">
-                          <p>Копия устава (учредительного договора)</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accreditation-card">
-                          <p>Анкета для юр лица</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accreditation-card">
-                          <p>Копия устава (учредительного договора)</p>
-                          <div class="file-input-wrapper">
-                            <span class="file-name"></span>
-                            <div class="separator"></div>
-                            <div class="custom-fileform">
-                              <div class="selectbutton">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M19.463 5.57573C18.7758 4.82597 17.5346 4.77977 16.7073 5.60711L8.6073 13.7071C8.39783 13.9166 8.39783 14.1834 8.6073 14.3929C8.81678 14.6024 9.08361 14.6024 9.29309 14.3929L15.9931 7.6929C16.3836 7.30238 17.0168 7.30238 17.4073 7.6929C17.7978 8.08342 17.7978 8.71659 17.4073 9.10711L10.7073 15.8071C9.71678 16.7976 8.18361 16.7976 7.19309 15.8071C6.20256 14.8166 6.20256 13.2834 7.19309 12.2929L15.2931 4.1929C16.8606 2.62537 19.408 2.57436 20.9225 4.20821C22.4748 5.77662 22.5205 8.31157 20.8931 9.82133L11.4073 19.3071C9.21678 21.4976 5.78361 21.4976 3.59309 19.3071C1.40256 17.1166 1.40256 13.6834 3.59309 11.4929L11.6931 3.3929C12.0836 3.00238 12.7168 3.00238 13.1073 3.3929C13.4978 3.78342 13.4978 4.41659 13.1073 4.80711L5.0073 12.9071C3.59783 14.3166 3.59783 16.4834 5.0073 17.8929C6.41678 19.3024 8.58361 19.3024 9.99309 17.8929L19.4931 8.3929C19.5033 8.38266 19.5138 8.37264 19.5245 8.36285C20.2742 7.67557 20.3204 6.43446 19.4931 5.60711C19.4828 5.59687 19.4728 5.58641 19.463 5.57573Z" fill="#8AB73A"/>
-                                </svg>
-                                <span>Прикрепить файл</span>
-
-                              </div>
-                              <input  type="file" name="upload" class="input-file"/>
-                            </div>
-                            <div class="delete-btn">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="#F26122"/>
-                              </svg>
-                              <span>Удалить</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="btns-wrapper">
-                        <button class="save-changes">Отправить</button>
-                        <button class="delete-changes">Отмена</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

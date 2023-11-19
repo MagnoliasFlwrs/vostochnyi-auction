@@ -378,6 +378,7 @@ if(room) {
 const tabsPanelWrapper =  document.querySelector('.tabs-panel-wrapper');
 const tabsPanelWrapperBtn = document.querySelector('.tabs-panel-wrapper div');
 const tabsPanelList = document.querySelector('.tabs-panel-wrapper ul');
+
 if (tabsPanelWrapper) {
     tabsPanelWrapperBtn.addEventListener('click' ,  ()=> {
         tabsPanelWrapper.classList.toggle('open');
@@ -385,7 +386,7 @@ if (tabsPanelWrapper) {
     })
 
     document.addEventListener('click' ,  (e) => {
-        if (tabsPanelWrapper.classList.contains('open') && !e.target.closest('.tabs-panel-wrapper')) {
+        if (tabsPanelWrapper.classList.contains('open') && !e.target.closest('.tabs-panel-wrapper') && !e.target.closest('.toggle-list')) {
             console.log(!e.target.classList.contains('tabs-panel-wrapper'))
             console.log(e)
             tabsPanelWrapper.classList.remove('open');
@@ -422,4 +423,64 @@ if (accreditationListItems) {
         })
     })
 
+}
+
+//allow-modal
+
+const allowModal = document.querySelector('.allow-modal');
+const allowModalBtns = document.querySelectorAll('.allow');
+const allowModalCloseBtn =  document.querySelector('.allow-modal .close-modal');
+
+function showAllowModal() {
+    allowModalBtns.forEach(el=> {
+        el.addEventListener('click' , (e) => {
+            e.preventDefault();
+            allowModal.classList.add('open');
+            overlay.classList.add('open');
+        })
+    })
+}
+function closeAllowModal() {
+    allowModalCloseBtn.addEventListener('click' , () => {
+        allowModal.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+    overlay.addEventListener('click' , () => {
+        allowModal.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+}
+if (allowModal && allowModalBtns) {
+    showAllowModal();
+    closeAllowModal();
+}
+
+//not-allow-modal
+
+const notAllowModal = document.querySelector('.not-allow-modal');
+const notAllowModalBtns = document.querySelectorAll('.not-allow');
+const notAllowModalCloseBtn =  document.querySelector('.not-allow-modal .close-modal');
+
+function showNotAllowModal() {
+    notAllowModalBtns.forEach(el=> {
+        el.addEventListener('click' , (e) => {
+            e.preventDefault();
+            notAllowModal.classList.add('open');
+            overlay.classList.add('open');
+        })
+    })
+}
+function closeNotAllowModal() {
+    notAllowModalCloseBtn.addEventListener('click' , () => {
+        notAllowModal.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+    overlay.addEventListener('click' , () => {
+        notAllowModal.classList.remove('open');
+        overlay.classList.remove('open');
+    })
+}
+if (allowModal && allowModalBtns) {
+    showNotAllowModal();
+    closeNotAllowModal();
 }
